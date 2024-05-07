@@ -31,3 +31,7 @@
 /Users/user/Downloads/dontnetstarter/dontnetstarter/obj/Debug/net7.0/dontnetstarter.pdb
 /Users/user/Downloads/dontnetstarter/dontnetstarter/obj/Debug/net7.0/dontnetstarter.genruntimeconfig.cache
 /Users/user/Downloads/dontnetstarter/dontnetstarter/obj/Debug/net7.0/ref/dontnetstarter.dll
+/Users/user/Downloads/dontnetstarter/dontnetstarter/bin/Debug/net7.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/user/Downloads/dontnetstarter/dontnetstarter/bin/Debug/net7.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/user/Downloads/dontnetstarter/dontnetstarter/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/user/Downloads/dontnetstarter/dontnetstarter/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
