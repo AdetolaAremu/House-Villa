@@ -1,0 +1,41 @@
+2024-05-27 16:15:35.699 +01:00 [INF] Executed DbCommand (550ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [magic_villa];
+2024-05-27 16:15:35.954 +01:00 [INF] Executed DbCommand (227ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [magic_villa] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-05-27 16:15:35.991 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-27 16:15:36.076 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-05-27 16:15:36.079 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-05-27 16:15:36.095 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-05-27 16:15:36.123 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-05-27 16:15:36.138 +01:00 [INF] Applying migration '20240527151141_DbInitialMigration'.
+2024-05-27 16:15:36.168 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [villas] (
+    [id] int NOT NULL IDENTITY,
+    [name] nvarchar(max) NOT NULL,
+    [details] nvarchar(max) NOT NULL,
+    [rate] float NOT NULL,
+    [sqft] int NOT NULL,
+    [occupancy] int NOT NULL,
+    [imageurl] nvarchar(max) NOT NULL,
+    [amenity] nvarchar(max) NOT NULL,
+    [created_at] datetime2 NOT NULL,
+    [updated_at] datetime2 NOT NULL,
+    CONSTRAINT [PK_villas] PRIMARY KEY ([id])
+);
+2024-05-27 16:15:36.189 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240527151141_DbInitialMigration', N'7.0.19');

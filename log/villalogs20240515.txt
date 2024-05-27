@@ -1,0 +1,17 @@
+2024-05-15 14:41:44.255 +01:00 [INF] Now listening on: https://localhost:7245
+2024-05-15 14:41:44.313 +01:00 [INF] Now listening on: http://localhost:5118
+2024-05-15 14:41:44.316 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-15 14:41:44.317 +01:00 [INF] Hosting environment: Development
+2024-05-15 14:41:44.317 +01:00 [INF] Content root path: /Users/user/Downloads/dontnetstarter/dontnetstarter
+2024-05-15 14:41:45.388 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/swagger/index.html - -
+2024-05-15 14:41:45.623 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/swagger/index.html - - - 200 - text/html;charset=utf-8 237.2974ms
+2024-05-15 14:41:45.812 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/swagger/v1/swagger.json - -
+2024-05-15 14:41:45.961 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 149.8692ms
+2024-05-15 14:41:53.957 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7245/api/getvillas - -
+2024-05-15 14:41:53.963 +01:00 [INF] Executing endpoint 'dontnetstarter.Controllers.VillaController.GetVilla (dontnetstarter)'
+2024-05-15 14:41:53.981 +01:00 [INF] Route matched with {action = "GetVilla", controller = "Villa"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[dontnetstarter.Models.DTO.VillaDTO]] GetVilla() on controller dontnetstarter.Controllers.VillaController (dontnetstarter).
+2024-05-15 14:41:53.983 +01:00 [INF] Getting all villas
+2024-05-15 14:41:53.990 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[dontnetstarter.Models.DTO.VillaDTO, dontnetstarter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-15 14:41:54.092 +01:00 [INF] Executed action dontnetstarter.Controllers.VillaController.GetVilla (dontnetstarter) in 107.322ms
+2024-05-15 14:41:54.093 +01:00 [INF] Executed endpoint 'dontnetstarter.Controllers.VillaController.GetVilla (dontnetstarter)'
+2024-05-15 14:41:54.094 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7245/api/getvillas - - - 200 146 application/json;+charset=utf-8 136.2547ms
