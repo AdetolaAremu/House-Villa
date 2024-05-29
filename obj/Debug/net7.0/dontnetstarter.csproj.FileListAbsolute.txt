@@ -179,3 +179,4 @@
 /Users/user/Downloads/dontnetstarter/obj/Debug/net7.0/dontnetstarter.pdb
 /Users/user/Downloads/dontnetstarter/obj/Debug/net7.0/dontnetstarter.genruntimeconfig.cache
 /Users/user/Downloads/dontnetstarter/obj/Debug/net7.0/ref/dontnetstarter.dll
+/Users/user/Downloads/dontnetstarter/obj/Debug/net7.0/dontnetstarter.sourcelink.json

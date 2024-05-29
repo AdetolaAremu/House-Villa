@@ -8,6 +8,7 @@ namespace dontnetstarter.Models
 	{
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		
 		public int id { get; set; }
 		public string name { get; set; }
 		public string details { get; set; }
