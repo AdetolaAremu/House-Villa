@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using dontnetstarter.DataStore;
 using Microsoft.AspNetCore.JsonPatch;
 using dontnetstarter.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace dontnetstarter.Controllers
 {
@@ -128,10 +129,11 @@ namespace dontnetstarter.Controllers
 				rate = villaDto.rate,
 				sqft = villaDto.sqft
 			};
+
 			_db.villas.Update(model);
 			_db.SaveChanges();
 
-			return Ok(new { message = "Villa created successfully" });
+			return Ok(new { message = "Villa updated successfully" });
 		}
 
 		[HttpPatch("{id:int}", Name = "UpdatePartialVilla")]
@@ -142,7 +144,7 @@ namespace dontnetstarter.Controllers
 		{
 			if (patchVillaDTO == null || id == 0) return BadRequest();
 
-			var villa = _db.villas.FirstOrDefault(u => u.id == id);
+			var villa = _db.villas.AsNoTracking().FirstOrDefault(u => u.id == id);
 
 			if (villa == null) return NotFound();
 
@@ -169,13 +171,13 @@ namespace dontnetstarter.Controllers
 				rate = villaDto.rate,
 				sqft = villaDto.sqft
 			};
-			
+
 			_db.villas.Update(model);
 			_db.SaveChanges();
 
 			if (!ModelState.IsValid) return BadRequest(ModelState);
 
-			return Ok();
+			return Ok(new { message = "Updated successfully" });
 		}
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dontnetstarter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f979f0b0dcc8b25b4c6e8a372e64314a6ac77404")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+361d7047279a7d9b365f9ff5f4d2b61c03c37729")]
 [assembly: System.Reflection.AssemblyProductAttribute("dontnetstarter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dontnetstarter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
